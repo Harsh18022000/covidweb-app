@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const avail = require("./linkedlist.js");
+const avail = require("./score-generate.js");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('images'));
 const firebase = require("./firebase/firebase_connect");
