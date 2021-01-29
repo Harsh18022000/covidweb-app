@@ -1,4 +1,4 @@
-class Node {
+/*class Node {
     constructor(data, next = null) {
       this.data = data;
       this.next = next;
@@ -129,10 +129,10 @@ class Node {
       }
     }
   }
-  
-  const ll = new LinkedList();
-  var count=0;
-  var flag=0;
+  */
+  //const ll = new LinkedList();
+  //var count=0;
+  //var flag=0;
 
   function sc(a,b){
     if(a=="y" && b=="n"){
@@ -159,12 +159,12 @@ class Node {
    {"name":"jatin","occp":"it-soft","covid":"y","resp":"n","diab":"y"}];*/
 
 function calculator(name,occp,resp,diab){
-    flag=0;
-    count=0;
+    //flag=0;
+    //count=0;
     var half = sc(diab,resp);
     var full = score(occp);
     var b = full*half;
-    let current = ll.head;
+    /*let current = ll.head;
     if(current==null){
         ll.insertFirst(b);
     }
@@ -180,9 +180,9 @@ function calculator(name,occp,resp,diab){
     if(flag==0){
         ll.insertLast(b);
     }
-   }
+   }*/
    return(b);
 }
   // ll.getAt(2);
 module.exports={calculator,score,sc};
-  ll.printListData();
+  //ll.printListData();
