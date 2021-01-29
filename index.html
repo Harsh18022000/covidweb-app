@@ -205,46 +205,63 @@
 	</div>
 	<div class="row" id="secondrow" style="margin:10px;">
 	    <div class="container">
-	   <div class="row" style="padding-top:100px;">
-	      <div class="col-xs-3 col-lg-6 col-sm-6 col-md-6"  style="background-color:rgb(0,0,0,0.4);
+	       <div class="row" style="padding-top:100px;">
+	         <div class="col-xs-3 col-lg-6 col-sm-6 col-md-6"  style="background-color:rgb(0,0,0,0.4);
 			   border-radius:20px;">
       	      
 		          <form method="post" action="/"  id="form-set"> 
 				     <div class="form-group"  >
-					 <h1>CONTACT US</h1>
-				      <label><h4>FIRSTNAME</h4></label>
-					  <input type="text" class="form-control" name="firstname" id="firstname" required>
+					   <h1>CONTACT US</h1>
+				       <label><h4>NAME</h4></label>
+					   <input type="text" class="form-control" name="name" id="name" required>
 					 </div>
 					 <div class="form-group">
-				      <label><h4>LASTNAME</h4></label>
-					  <input type="text" class="form-control"  name="lastname" id="lastname" required>
+				      <label><h4>OCCUPATION</h4></label>
+					  <select name="occp" id="occp">
+                            <option value="healthcare">healthcare</option>
+                            <option value="public-service">public-service</option>
+							<option value="student">student</option>
+							<option value="it-soft">it-soft</option>
+                      </select>
 					 </div>
 					 <div class="form-group">
-				      <label><h4>EMAIL</h4></label>
-					  <input type="email" class="form-control" name="email" id="email" required>
+				      <label><h4>DIABETES</h4></label>
+					  <select name="diab" id="diab">
+                            <option value="y">y</option>
+                            <option value="n">n</option>
+                      </select>
 					 </div>
 					 <div class="form-group">
-				      <label><h4>MESSAGE</h4></label>
-					  <textarea class="form-control" name="messages" id="messages"></textarea>
+				      <label><h4>RESPDISEASES</h4></label>
+					  <select name="resp" id="resp">
+                            <option value="y">y</option>
+                            <option value="n">n</option>
+                      </select>
 					 </div>
 					 <div class="form-group">
-					  <button type="submit" class="btn btn-primary">Submit</button>
+					  <button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
 					 </div>
 				  </form>
 	       </div>
 		   <div class="col-xs-3 col-lg-6 col-sm-6 col-md-6"  >
 		    <img src="download.jfif" alt="img" style="height:100%;border-radius:20px;width:90%;">
 		  
-		  </div>
+		     </div>
+		   </div>
 		</div>
+	</div>
 	<div class="row" id="thirdrow" style="margin-top:10px;">
 	    <img  src="Tesla-Logo.jpg" id="logo">
 	    <div class="hide col" id="mynav">
-	        <div  class="col item"><a href="#">vaccine-centers</a></div>
-	        <div  class="col item"><a href="#">FAQ'S</a></div>
+	        <div  class="col item"><a href="#" style="text-decoration:none;color:black;">VACCINE CENTRE</a></div>
+	       <div  class="col item"><a href="#" style="text-decoration:none;color:black;">FAQ'S</a></div>
 	    </div>
 	</div>
-	
+	<script>
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
